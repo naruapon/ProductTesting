@@ -40,7 +40,7 @@ public class Product {
 			
 			// 3. Execute SQL query
 			String sql = "INSERT INTO Product " +
-	                   "VALUES ('pid','pname',pprice)";
+	                   "VALUES ('"+pid+"','"+pname+"',"+pprice+")";
 			myStmt.executeUpdate(sql);
 			
 			
